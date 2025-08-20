@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe - Input Version</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>Tic Tac Toe</h1>
+
+    <div class="board" id="board">
+      <!-- Cells 0–8 -->
+      <div class="cell" data-cell-index="0">0</div>
+      <div class="cell" data-cell-index="1">1</div>
+      <div class="cell" data-cell-index="2">2</div>
+      <div class="cell" data-cell-index="3">3</div>
+      <div class="cell" data-cell-index="4">4</div>
+      <div class="cell" data-cell-index="5">5</div>
+      <div class="cell" data-cell-index="6">6</div>
+      <div class="cell" data-cell-index="7">7</div>
+      <div class="cell" data-cell-index="8">8</div>
+    </div>
+
+    <div class="input-section">
+      <input type="number" id="player1Input" placeholder="Player 1 (X) enter cell 0–8" min="0" max="8" />
+      <input type="number" id="player2Input" placeholder="Player 2 (O) enter cell 0–8" min="0" max="8" />
+    </div>
+
+    <p id="status">Player X's Turn</p>
+    <button id="reset">Restart Game</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
