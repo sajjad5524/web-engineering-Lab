@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #cdd1d4;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 24px;
+  background-color: rgb(15, 15, 15);
+  color: white;
+  position: relative;
+  z-index: 10;
+}
+
+.heading1 {
+  font-weight: initial;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  position: relative;
+  z-index: 1000;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.account {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.account:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 999;
+}
+
+.dropdown-content a {
+float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 20px;
+}
+
+.search-input {
+  width: 280px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+.search-button {
+  padding: 6px 14px;
+  background-color: #facc15;
+  color: #1e293b;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-icon {
+  font-size: 25px;
+  cursor: pointer;
+  margin-top: 7px;
+  padding-left: 200px;
+}
+
+.banner {
+  position: relative;
+  background: url('https://static.vecteezy.com/system/resources/previews/020/650/063/non_2x/discount-special-offer-banner-on-a-black-background-free-vector.jpg') no-repeat center center/cover;
+  height: 400px;
+  margin-top: 10px;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.banner-content {
+  position: relative;
+  width: 100%;
+}
+
+.banner-button {
+  margin-top: 250px;
+  margin-left: 1250px;
+  bottom: 20px;
+  right: 40px;
+  background-color: #7cfa15;
+  color: #1e293b;
+  border: none;
+  padding: 12px 24px;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.banner-button:hover {
+  background-color: #eab308;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 40px 24px;
+  background-color: #f1f5f9;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.product-card img {
+  width: 70%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.product-card:hover {
+  transform: translateY(-5px) scale(1.03);
+}
+
+.product-card img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.product-card h3 {
+  margin: 12px 0 6px;
+  font-size: 18px;
+  color: #1e293b;
+}
+
+.product-card p {
+  font-size: 16px;
+  color: #475569;
+}
+
+.footer {
+  color: rgb(6, 6, 6);
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 30px;
+}
